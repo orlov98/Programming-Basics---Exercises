@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int hr = int.Parse(Console.ReadLine());
+            int rose = int.Parse(Console.ReadLine());
+            int lale = int.Parse(Console.ReadLine());
+            string season = Console.ReadLine();
+            string holiday = Console.ReadLine();
+            double sum = 0;
+            if (season == "Spring" || season == "Summer")
+            {
+                sum = 2*hr + 4.10*rose + 2.50*lale;
+            }
+            else
+            {
+                sum = 3.75*hr + 4.50*rose + 4.15*lale;
+            }
+            if (holiday == "Y")
+                sum = sum + 15.0 / 100.0 * sum;
+            if (season == "Spring" && lale > 7)
+                sum = sum - 5.0/100.0*sum;
+            else if (season == "Winter" && rose >= 10)
+                sum = sum - 10.0/100.0*sum;
+            if (hr + rose + lale > 20)
+                sum = sum - 20.0/100.0*sum;
+            sum = sum + 2;
+            Console.WriteLine("{0:f2}",sum);
+        }
+    }
+}

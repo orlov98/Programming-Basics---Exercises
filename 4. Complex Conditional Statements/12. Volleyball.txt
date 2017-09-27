@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string year = Console.ReadLine().ToLower();
+            int holiday = int.Parse(Console.ReadLine());
+            int home = int.Parse(Console.ReadLine());
+            int Sofia = 48 - home;
+            double playSofia = Sofia * 3.0 / 4;
+            double playHoliday = holiday * 2.0 / 3;
+            double play = playSofia + playHoliday + home;
+            if (year == "leap")
+            {
+                play = play + play * 15.0 / 100;
+                play = Math.Truncate(play);
+                Console.WriteLine(play);
+            }
+            else if (year == "normal")
+            {
+                play = Math.Truncate(play);
+                Console.WriteLine(play);
+            }
+        }
+    }
+}

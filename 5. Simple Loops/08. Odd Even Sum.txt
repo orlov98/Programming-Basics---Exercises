@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int sum1 = 0, sum2 = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    int a = int.Parse(Console.ReadLine());
+                    sum2 = sum2 + a;
+                }
+                else
+                {
+                    int a = int.Parse(Console.ReadLine());
+                    sum1 = sum1 + a;
+                }
+            }
+            if (sum1 == sum2)
+                Console.WriteLine("yes sum = " + sum1);
+            else
+                Console.WriteLine("no diff = " + Math.Abs(sum1-sum2));
+        }
+    }
+}

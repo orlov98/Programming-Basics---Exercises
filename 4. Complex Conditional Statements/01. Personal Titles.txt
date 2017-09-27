@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = double.Parse(Console.ReadLine());
+            string g = Console.ReadLine();
+            if (a >= 16)
+            {
+                if (g == "m")
+                    Console.WriteLine("Mr.");
+                else if (g == "f")
+                    Console.WriteLine("Ms.");
+            }
+            else
+            {
+                if (g == "m")
+                    Console.WriteLine("Master");
+                else if (g == "f")
+                    Console.WriteLine("Miss");
+            }
+        }
+    }
+}

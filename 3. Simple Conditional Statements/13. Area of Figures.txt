@@ -1,0 +1,39 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    namespace ConsoleApplication1
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                double S = 0;
+                string f = Console.ReadLine();
+                if (f == "square")
+                {
+                    double a = double.Parse(Console.ReadLine());
+                    S = Math.Round(a * a, 3);
+                }
+                else if (f == "rectangle")
+                {
+                    double a = double.Parse(Console.ReadLine());
+                    double b = double.Parse(Console.ReadLine());
+                    S = Math.Round(a * b, 3);
+                }
+                else if (f == "circle")
+                {
+                    double r = double.Parse(Console.ReadLine());
+                    S = Math.Round(Math.PI * r * r, 3);
+                }
+                else if (f == "triangle")
+                {
+                    double a = double.Parse(Console.ReadLine());
+                    double h = double.Parse(Console.ReadLine());
+                    S = Math.Round(a * h / 2, 3);
+                }
+                Console.WriteLine(S);
+            }
+        }
+    }

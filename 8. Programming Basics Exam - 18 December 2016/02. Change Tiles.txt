@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double money = double.Parse(Console.ReadLine());
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            double price = double.Parse(Console.ReadLine());
+            double service = double.Parse(Console.ReadLine());
+            double sum = 0;
+            double S = a*b;
+            double S1 = c*h/2.0;
+            double br = S/S1;
+            br = Math.Ceiling(br);
+            br = br + 5;
+            sum = br*price + service;
+            if (money >= sum)
+                Console.WriteLine("{0:f2} lv left.", money - sum);
+            else
+            {
+                Console.WriteLine("You'll need {0:f2} lv more.", sum - money);
+            }
+        }
+    }
+}

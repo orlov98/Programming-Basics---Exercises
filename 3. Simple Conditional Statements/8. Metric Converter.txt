@@ -1,0 +1,122 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sum = double.Parse(Console.ReadLine());
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+            double m = 0, mm = 0, cm = 0, mi = 0, inch = 0, km = 0, ft = 0, yd = 0;
+            if (a == "m")
+            {
+                m = sum;
+                mm = m * 1000;
+                cm = m * 100;
+                mi = m * 0.000621371192;
+                inch = m * 39.3700787;
+                km = m * 0.001;
+                ft = m * 3.2808399;
+                yd = m * 1.0936133;
+            }
+            else if (a == "mm")
+            {
+                mm = sum;
+                m = mm / 1000;
+                cm = m * 100;
+                mi = m * 0.000621371192;
+                inch = m * 39.3700787;
+                km = m * 0.001;
+                ft = m * 3.2808399;
+                yd = m * 1.0936133;
+            }
+            else if (a == "cm")
+            {
+                cm = sum;
+                m = cm / 100;
+                mm = m * 1000;
+                mi = m * 0.000621371192;
+                inch = m * 39.3700787;
+                km = m * 0.001;
+                ft = m * 3.2808399;
+                yd = m * 1.0936133;
+            }
+            else if (a == "mi")
+            {
+                mi = sum;
+                m = mi / 0.000621371192;
+                mm = m * 1000;
+                cm = m * 100;
+                inch = m * 39.3700787;
+                km = m * 0.001;
+                ft = m * 3.2808399;
+                yd = m * 1.0936133;
+            }
+            else if (a == "in")
+            {
+                inch = sum;
+                m = inch / 39.3700787;
+                mm = m * 1000;
+                cm = m * 100;
+                mi = m * 0.000621371192;
+                km = m * 0.001;
+                ft = m * 3.2808399;
+                yd = m * 1.0936133;
+            }
+            else if (a == "km")
+            {
+                km = sum;
+                m = km / 0.001;
+                mm = m * 1000;
+                cm = m * 100;
+                mi = m * 0.000621371192;
+                inch = m * 39.3700787;
+                ft = m * 3.2808399;
+                yd = m * 1.0936133;
+            }
+            else if (a == "ft")
+            {
+                ft = sum;
+                m = ft / 3.2808399;
+                mm = m * 1000;
+                cm = m * 100;
+                mi = m * 0.000621371192;
+                inch = m * 39.3700787;
+                km = m * 0.001;
+                yd = m * 1.0936133;
+            }
+            else if (a == "yd")
+            {
+                yd = sum;
+                m = yd / 1.0936133;
+                mm = m * 1000;
+                cm = m * 100;
+                mi = m * 0.000621371192;
+                inch = m * 39.3700787;
+                km = m * 0.001;
+                ft = m * 3.2808399;
+            }
+            if (b == "m")
+                Console.WriteLine(m);
+            else if (b == "mm")
+                Console.WriteLine(mm);
+            else if (b == "cm")
+                Console.WriteLine(cm);
+            else if (b == "mi")
+                Console.WriteLine(mi);
+            else if (b == "in")
+                Console.WriteLine(inch);
+            else if (b == "km")
+                Console.WriteLine(km);
+            else if (b == "ft")
+                Console.WriteLine(ft);
+            else if (b == "yd")
+                Console.WriteLine(yd);
+        }
+    }
+}

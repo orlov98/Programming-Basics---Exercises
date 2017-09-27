@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int sumA = 0, sumB = 0;
+            int []a = new int [n];
+            int[] b = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                a[i] = int.Parse(Console.ReadLine());
+                sumA = sumA + a[i];
+            }
+            for (int k = 0; k < n; k++)
+            {
+                b[k] = int.Parse(Console.ReadLine());
+                sumB = sumB + b[k];
+            }
+            if (sumA == sumB)
+                Console.WriteLine("Yes, sum = " + sumA);
+            else
+                Console.WriteLine("No, diff = " + (Math.Abs(sumA - sumB)));
+        }
+    }
+}

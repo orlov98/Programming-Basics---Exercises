@@ -1,0 +1,244 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    namespace ConsoleApplication1
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                int a = int.Parse(Console.ReadLine());
+                if (a == 100)
+                    Console.WriteLine("one hundred");
+                else if (a<100 && a>=0)
+                {
+                    if (a / 10 == 9)
+                    {
+                        Console.Write("ninety");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 8)
+                    {
+                        Console.Write("eighty");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 7)
+                    {
+                        Console.Write("seventy");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 6)
+                    {
+                        Console.Write("sixty");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 5)
+                    {
+                        Console.Write("fifty");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 4)
+                    {
+                        Console.Write("fourty");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 3)
+                    {
+                        Console.Write("thirty");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 2)
+                    {
+                        Console.Write("twenty");
+                        if (a % 10 == 1)
+                            Console.WriteLine(" one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine(" two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine(" three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine(" four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine(" five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine(" six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine(" seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine(" eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine(" nine");
+                    }
+                    else if (a / 10 == 1)
+                    {
+                        if (a % 10 == 0)
+                            Console.WriteLine("ten");
+                        else if (a % 10 == 1)
+                            Console.WriteLine("eleven");
+                        else if (a % 10 == 2)
+                            Console.WriteLine("twelve");
+                        else if (a % 10 == 3)
+                            Console.WriteLine("thirteen");
+                        else if (a % 10 == 4)
+                            Console.WriteLine("fourteen");
+                        else if (a % 10 == 5)
+                            Console.WriteLine("fifteen");
+                        else if (a % 10 == 6)
+                            Console.WriteLine("sixteen");
+                        else if (a % 10 == 7)
+                            Console.WriteLine("seventeen");
+                        else if (a % 10 == 8)
+                            Console.WriteLine("eighteen");
+                        else if (a % 10 == 9)
+                            Console.WriteLine("nineteen");
+                    }
+                    else if (a / 10 == 0)
+                    {
+                        if (a % 10 == 0)
+                            Console.WriteLine("zero");
+                        else if (a % 10 == 1)
+                            Console.WriteLine("one");
+                        else if (a % 10 == 2)
+                            Console.WriteLine("two");
+                        else if (a % 10 == 3)
+                            Console.WriteLine("three");
+                        else if (a % 10 == 4)
+                            Console.WriteLine("four");
+                        else if (a % 10 == 5)
+                            Console.WriteLine("five");
+                        else if (a % 10 == 6)
+                            Console.WriteLine("six");
+                        else if (a % 10 == 7)
+                            Console.WriteLine("seven");
+                        else if (a % 10 == 8)
+                            Console.WriteLine("eight");
+                        else if (a % 10 == 9)
+                            Console.WriteLine("nine");
+                    }
+                }
+                else
+                    Console.WriteLine("invalid number");
+            }
+        }
+    }

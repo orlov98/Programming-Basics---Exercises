@@ -1,0 +1,28 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    namespace ConsoleApplication1
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                int h = int.Parse(Console.ReadLine());
+                int m = int.Parse(Console.ReadLine());
+                m = m + 15;
+                if (m >= 60)
+                {
+                    h = h + m / 60;
+                    m = m % 60;
+                }
+                if (h >= 24)
+                    h = h % 24;
+                if (m < 10)
+                    Console.WriteLine("{0}:0{1}", h, m);
+                else
+                    Console.WriteLine("{0}:{1}", h, m);
+            }
+        }
+    }

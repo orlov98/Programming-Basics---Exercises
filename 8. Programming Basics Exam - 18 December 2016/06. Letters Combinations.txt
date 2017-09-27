@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+
+namespace ConsoleApplication23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string start = Console.ReadLine();
+            string end = Console.ReadLine();
+            string exception = Console.ReadLine();
+            int br = 0;
+            char s = start[0];
+            char e = end[0];
+            char exc = exception[0];
+            for (int k = (char)s; k <= (char)e; k++)
+            {
+                if (k != (char)exc)
+                {
+                    for (int i = (char)s; i <= (char)e; i++)
+                    {
+                        if (i != (char)exc)
+                        {
+                            for (int x = (char)s; x <= (char)e; x++)
+                            {
+                                if (x != (char)exc)
+                                {
+                                    Console.Write((char) k + "" + (char) i + "" + (char) x + " ");
+                                    br++;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Console.WriteLine(br);
+        }
+    }
+}

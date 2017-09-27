@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine().ToLower();
+            int r = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            int area = r * c;
+            double result = 0;
+            if (a == "premiere")
+                result = (double)area * 12.00;
+            else if (a == "normal")
+                result = (double)area * 7.50;
+            else if (a == "discount")
+                result = (double)area * 5.00;
+            Console.WriteLine("{0:f2}", result);
+        }
+    }
+}

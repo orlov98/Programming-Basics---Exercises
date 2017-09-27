@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            for (int r = 0; r < n; r++)
+            {
+                int v = 0;
+                for (int c = 0, br = r; c < n; c++)
+                {
+                    if (br >= n)
+                        v = 2;
+                    br = br + 1 - v;
+                    if (c > 0)
+                        Console.Write(" ");
+                    Console.Write(br);
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var V = int.Parse(Console.ReadLine());
+            var t1 = int.Parse(Console.ReadLine());
+            var t2 = int.Parse(Console.ReadLine());
+            var t3 = int.Parse(Console.ReadLine());
+            var S = 0.0;
+            var T1 = t1/60.0;
+            var T2 = t2/60.0;
+            var T3 = t3/60.0;
+            S = V*T1;
+            var speed = V + 10.0/100.0*V;
+            S = S + speed*T2;
+            speed = speed - 5.0/100.0*speed;
+            S = S + speed*T3;
+            Console.WriteLine("{0:f2}",S);
+        }
+    }
+}

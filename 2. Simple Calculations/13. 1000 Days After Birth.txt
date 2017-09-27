@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Globalization;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string dateStr = Console.ReadLine();
+            DateTime d = DateTime.ParseExact(dateStr, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+            d = d.AddDays(999);
+            Console.WriteLine(d.ToString("dd-MM-yyyy"));
+        }
+    }
+}

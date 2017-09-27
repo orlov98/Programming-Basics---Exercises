@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            double oddSum = 0;
+            double evenSum = 0;
+            double oddMax, oddMin, evenMax, evenMin;
+            if (n == 0)
+            {
+                Console.WriteLine("OddSum = " + oddSum);
+                Console.WriteLine("OddMin = No");
+                Console.WriteLine("OddMax = No");
+                Console.WriteLine("EvenSum = " + evenSum);
+                Console.WriteLine("EvenMin = No");
+                Console.WriteLine("EvenMax = No");
+            }
+            else if (n == 1)
+            {
+                double a = double.Parse(Console.ReadLine());
+                oddSum = a;
+                Console.WriteLine("OddSum = " + oddSum);
+                Console.WriteLine("OddMin = " + a);
+                Console.WriteLine("OddMax = " + a);
+                Console.WriteLine("EvenSum = " + evenSum);
+                Console.WriteLine("EvenMin = No");
+                Console.WriteLine("EvenMax = No");
+            }
+            else
+            {
+                double a = double.Parse(Console.ReadLine());
+                oddSum = a;
+                oddMin = a;
+                oddMax = a;
+                double b = double.Parse(Console.ReadLine());
+                evenSum = b;
+                evenMin = b;
+                evenMax = b;
+                for (int k = 3; k <= n; k++)
+                {
+                    if (k % 2 == 1)
+                    {
+                        a = double.Parse(Console.ReadLine());
+                        oddSum = oddSum + a;
+                        if (oddMin > a)
+                            oddMin = a;
+                        if (oddMax < a)
+                            oddMax = a;
+                    }
+                    else
+                    {
+                        b = double.Parse(Console.ReadLine());
+                        evenSum = evenSum + b;
+                        if (evenMin > b)
+                            evenMin = b;
+                        if (evenMax < b)
+                            evenMax = b;
+                    }
+                }
+                Console.WriteLine("OddSum = " + oddSum);
+                Console.WriteLine("OddMin = " + oddMin);
+                Console.WriteLine("OddMax = " + oddMax);
+                Console.WriteLine("EvenSum = " + evenSum);
+                Console.WriteLine("EvenMin = " + evenMin);
+                Console.WriteLine("EvenMax = " + evenMax);
+            }
+        }
+    }
+}

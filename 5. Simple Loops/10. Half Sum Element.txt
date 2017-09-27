@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int[] a = new int[n];
+            a[0] = int.Parse(Console.ReadLine());
+            int sum = a[0];
+            int max = a[0];
+            for (int k = 1; k < n; k++)
+            {
+                a[k] = int.Parse(Console.ReadLine());
+                sum = sum + a[k];
+                if (a[k] > max)
+                    max = a[k];
+            }
+            sum = sum - max;
+            if (max == sum)
+                Console.WriteLine("yes sum = " + sum);
+            else
+                Console.WriteLine("no diff = " + Math.Abs(sum - max));
+        }
+    }
+}

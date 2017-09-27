@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            double maxdiff = 0;
+            double[] sum = new double[n];
+            for (int k = 0; k < n; k++)
+            {
+                var a = double.Parse(Console.ReadLine());
+                var b = double.Parse(Console.ReadLine());
+                sum[k] = a + b;
+            }
+            for (int k = 1; k < n; k++)
+            {
+                if (maxdiff < Math.Abs(sum[k] - sum[k - 1]))
+                    maxdiff = Math.Abs(sum[k] - sum[k - 1]);
+            }
+            if (maxdiff == 0)
+                Console.WriteLine("Yes, value = " + sum[0]);
+            else
+                Console.WriteLine("No, maxdiff = " + maxdiff);
+        }
+    }
+}

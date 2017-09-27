@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sum = double.Parse(Console.ReadLine());
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+            double BGN = 0, USD = 0, EUR = 0, GBP = 0;
+            if (a == "BGN")
+            {
+                BGN = sum;
+                USD = BGN / 1.79549;
+                EUR = BGN / 1.95583;
+                GBP = BGN / 2.53405;
+            }
+            else if (a == "USD")
+            {
+                USD = sum;
+                BGN = USD * 1.79549;
+                EUR = BGN / 1.95583;
+                GBP = BGN / 2.53405;
+            }
+            else if (a == "EUR")
+            {
+                EUR = sum;
+                BGN = EUR * 1.95583;
+                USD = BGN / 1.79549;
+                GBP = BGN / 2.53405;
+            }
+            else if (a == "GBP")
+            {
+                GBP = sum;
+                BGN = GBP * 2.53405;
+                USD = BGN / 1.79549;
+                EUR = BGN / 1.95583;
+            }
+            BGN = Math.Round(BGN, 2);
+            USD = Math.Round(USD, 2);
+            EUR = Math.Round(EUR, 2);
+            GBP = Math.Round(GBP, 2);
+            if (b == "BGN")
+                Console.WriteLine(BGN);
+            else if (b == "USD")
+                Console.WriteLine(USD);
+            else if (b == "EUR")
+                Console.WriteLine(EUR);
+            else if (b == "GBP")
+                Console.WriteLine(GBP);
+        }
+    }
+}
